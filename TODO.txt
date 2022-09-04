@@ -1,0 +1,31 @@
+chose:
+- server: Haskell/spock vs hasura ?
+- cli app: Haskell vs rust ?
+- web client: svelte(kit?) vs elm ?
+
+
+# Models:
+
+User:
+  id: Uuid
+  username: String
+  password: String
+
+List:
+  owner: User
+  name: String
+
+ListItem:
+  created: DateTime
+  updated: DateTime
+  completed: DateTime
+  deadline: DateTime
+  content: String
+  priority: 1|2|3
+  difficulty: 1|2|3
+  detail: String
+
+ListSharing:
+  list: List
+  write: boolean
+  user: User
