@@ -31,20 +31,20 @@ _______________________________________________________  most recent  __
 
 #### main list ui:
 
-[ ] up down: j/k and arrow keys
-[ ] toggle todo: space
-[ ] insert mode: enter (on both existing items and new ones)
-[ ] go to content pane : left arrow and l
-[ ] back from content pane : esc (allow using tab key in content)
-[ ] update priority: +/- and ^x/^a
-[ ] go to dashboard: h and left arrow
+- [ ] up down: j/k and arrow keys
+- [ ] toggle todo: space
+- [ ] insert mode: enter (on both existing items and new ones)
+- [ ] go to content pane : left arrow and l
+- [ ] back from content pane : esc (allow using tab key in content)
+- [ ] update priority: +/- and ^x/^a
+- [ ] go to dashboard: h and left arrow
 
 #### dashboard
 
-[ ] go to list
+- [ ] go to list
 
 
 
 #### "cloud" mode:
 
-[ ] share: "i" to generate invite link (for selected list in dashboard or current list in list view)
+- [ ] share: "i" to generate invite link (for selected list in dashboard or current list in list view)
