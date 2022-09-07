@@ -56,6 +56,7 @@ class SimpleApp(App):
     async def on_load(self, event):
         await self.bind("j", "select_next()")
         await self.bind("k", "select_prev()")
+        await self.bind("l", "select_option()")
         await self.bind("q", "quit")
 
     async def action_select_next(self) -> None:
@@ -66,6 +67,16 @@ class SimpleApp(App):
         print("prev todo handler called")
         for i in range(len(self.todoList.items) - 1):
             self.todoList.current_item = next(self.selectionCycle)
+    
+    async def action_select_option(self) -> None:
+        print("select option handler called")
+        # remove current selected item
+        for item in self.todoList.items:
+            if item.done == True:
+                item.done = False
+        self.todoList.current_item.done = True
+        self.todoList.current_item = next(self.selectionCycle)
+
 
     async def action_exit(self) -> None:
         exit()
