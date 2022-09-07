@@ -71,10 +71,7 @@ class SimpleApp(App):
     async def action_select_option(self) -> None:
         print("select option handler called")
         # remove current selected item
-        for item in self.todoList.items:
-            if item.done == True:
-                item.done = False
-        self.todoList.current_item.done = True
+        self.todoList.current_item.done = not self.todoList.current_item.done
         self.todoList.current_item = next(self.selectionCycle)
 
 
